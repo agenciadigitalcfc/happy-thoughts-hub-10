@@ -1,83 +1,52 @@
-export const WHATSAPP_NUMBER = "5531984589016";
+export const WHATSAPP_NUMBER = "5511971015320";
 
 export const CLINIC = {
-  doctor: "Thebit Saúde e Estética",
-  director: "Dr. Daniel Thebit",
-  crm: "CRO-MG · Especialista em Dentística",
-  specialty: "Clínica Odontológica e Médica",
-  address: "Av. dos Bandeirantes, 466 — Anchieta / Comiteco, Belo Horizonte / MG, 30315-382",
-  phone: "+55 31 98458-9016",
-  hours: "Seg a sex, 09h às 20h · Sáb, 09h às 12h",
-  email: "contato@thebitsaudeestetica.com.br",
-  instagram: "https://www.instagram.com/clinica.thebit/",
-  maps: "https://maps.app.goo.gl/d8ZuF7bmtdwbMKhF7",
-  rating: "5.0",
+  doctor: "Dr. Samuel Montalvão",
+  director: "Dr. Samuel Montalvão",
+  crm: "CRO-SP 133516",
+  specialty: "Cirurgião-Dentista | Harmonização Orofacial",
+  institution: "Instituto Montalvão",
+  phone: "(11) 97101-5320",
+  instagram: "https://www.instagram.com/drsamuelmontalvao/",
+  instagramInstitutional: "https://www.instagram.com/institutomontalvao",
 };
 
 export const FIRST_VISIT = {
-  price: "R$ 450",
-  payments: "Dinheiro, Pix, transferência, cheque ou cartão",
-  steps: [
-    "A avaliação inicial é feita com o Dr. Daniel Thebit, que orienta quais procedimentos são indicados para o seu caso.",
-    "Não é necessário levar exames: os exames de imagem são solicitados e realizados na própria clínica.",
-    "Para reservar o horário pedimos nome completo, RG, CPF, endereço com CEP e informação sobre alergias.",
-    "Consulta no valor de R$ 450, com pagamento em dinheiro, Pix, transferência, cheque ou cartão.",
-    "Se vier de carro, ligue ao chegar que abrimos o portão para você.",
-  ],
+  price: "R$ 580,00",
+  payments: "Pix ou link de pagamento",
+  note: "O valor da consulta é abatido do procedimento realizado, conforme condição informada pelo Instituto.",
 };
 
 export const TEAM = [
-  {
-    id: "daniel",
-    name: "Dr. Daniel Thebit",
-    instagram: "https://www.instagram.com/dr.danielthebit/",
-  },
-  {
-    id: "bianca",
-    name: "Dra. Bianca Medeiros",
-    instagram: "https://www.instagram.com/drabiancamedeiros/",
-  },
-  {
-    id: "katielly",
-    name: "Dra. Katielly Mendes",
-    instagram: "https://www.instagram.com/dra.katiellymendes/",
-  },
-  {
-    id: "fernanda",
-    name: "Dra. Fernanda Montrezor",
-    instagram: "https://www.instagram.com/dra.fernandamontrezor/",
-  },
-  {
-    id: "luiza",
-    name: "Luiza Francino",
-    instagram: "https://www.instagram.com/luizafrancino/",
-  },
-  {
-    id: "isabela",
-    name: "Dra. Isabela Garzedin",
-    instagram: "https://www.instagram.com/isabela.garzedin/",
-  },
-  {
-    id: "gabriela",
-    name: "Gabriela Jardim",
-    instagram: "https://www.instagram.com/gabrielajards/",
-  },
-  {
-    id: "camila",
-    name: "Dra. Camila Attiê",
-    instagram: "https://www.instagram.com/dra.camilaattie/",
-  },
+  { id: "samuel", name: "Dr. Samuel Montalvão", role: "Cirurgião-Dentista | Harmonização Orofacial", instagram: "https://www.instagram.com/drsamuelmontalvao/" },
+  { id: "cassio", name: "Dr. Cássio Montalvão", role: "Equipe Instituto Montalvão" },
+  { id: "isadora", name: "Dra. Isadora Montalvão", role: "Equipe Instituto Montalvão" },
+  { id: "nathaly", name: "Dra. Nathaly", role: "Equipe Instituto Montalvão" },
+  { id: "victor", name: "Dr. Victor Montalvão", role: "Equipe Instituto Montalvão" },
 ];
 
 export const TECH_ITEMS = [
-  { id: "lenses" },
-  { id: "resin" },
-  { id: "invisalign" },
-  { id: "xray" },
-  { id: "isolation" },
-  { id: "injectables" },
+  { id: "pilare" },
+  { id: "planning" },
+  { id: "natural" },
+  { id: "health" },
+  { id: "biomodulation" },
+  { id: "precision" },
 ];
 
-export function whatsappLink(message: string) {
+export const PROCEDURES = [
+  ["Harmonização Orofacial", "Planejamento individualizado para equilíbrio, proporção e naturalidade facial."],
+  ["Preenchimento Facial", "Ácido hialurônico para estruturação, contorno, definição e refinamento de proporções."],
+  ["Preenchimento Labial", "Contorno, proporção, definição e equilíbrio respeitando a identidade dos lábios."],
+  ["Rinomodelação", "Refinamento estético e equilíbrio das proporções nasais conforme avaliação profissional."],
+  ["Toxina Botulínica", "Possibilidades para regiões faciais e musculares conforme indicação e planejamento individual."],
+  ["Bioestimuladores de Colágeno", "Radiesse, Sculptra e estratégias de biomodulação voltadas à qualidade e firmeza da pele."],
+  ["Fios de PDO", "Fios de sustentação e fios lisos para estímulo de colágeno e suporte conforme indicação."],
+  ["Bichectomia", "Procedimento cirúrgico para remoção da bola de Bichat e possível refinamento do contorno facial."],
+  ["Regeneração e Biomodulação", "PRP, I-PRF, mesclas de biomodulação, exossomos e ExoCube quando indicados."],
+  ["Terapias Capilares", "Estratégias voltadas à regeneração folicular, queda, volume e qualidade dos fios."],
+] as const;
+
+export function whatsappLink(message = "Olá! Gostaria de agendar uma avaliação com o Dr. Samuel Montalvão.") {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
