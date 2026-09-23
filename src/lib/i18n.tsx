@@ -36,6 +36,7 @@ const pt:Dict={
 "consultant.error.size":"Envie uma imagem de até 8 MB.","consultant.error.gen":"Não foi possível gerar a orientação.","wa.smile.message":"Olá! Gostaria de agendar uma avaliação com o Dr. Samuel Montalvão.","wa.facial.message":"Olá! Gostaria de agendar uma avaliação com o Dr. Samuel Montalvão."
 };
 
+pt["about_page.eyebrow"]="Sobre o Instituto"; pt["about_page.title"]="A beleza de cada rosto começa pela sua identidade."; pt["about_page.intro"]="Conheça o posicionamento do Dr. Samuel Montalvão e do Instituto Montalvão em Harmonização Orofacial."; pt["about_page.img_alt"]="Instituto Montalvão";
 ["marquee.item9","marquee.item10","marquee.item11","marquee.item12","marquee.item13","marquee.item14"].forEach((k,i)=>{pt[k]=["Cuidado","Ciência","Equilíbrio","Precisão","Saúde","Experiência"][i]});
 const en:Dict={...pt}; const es:Dict={...pt}; const dicts={pt,en,es};
 type I18nValue={lang:Lang;setLang:(l:Lang)=>void;t:(key:string)=>string};
