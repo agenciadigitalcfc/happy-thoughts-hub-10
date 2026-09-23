@@ -36,6 +36,28 @@ const pt:Dict={
 "consultant.error.size":"Envie uma imagem de até 8 MB.","consultant.error.gen":"Não foi possível gerar a orientação.","wa.smile.message":"Olá! Gostaria de agendar uma avaliação com o Dr. Samuel Montalvão.","wa.facial.message":"Olá! Gostaria de agendar uma avaliação com o Dr. Samuel Montalvão."
 };
 
+const procedureKeys: Dict = {
+"procedure.harmonizacao.t":"Harmonização Orofacial","procedure.harmonizacao.d":"Planejamento individualizado para equilíbrio, proporção e naturalidade facial.",
+"procedure.preenchimento.t":"Preenchimento Facial","procedure.preenchimento.d":"Ácido hialurônico para estruturação, contorno, definição e refinamento de proporções.",
+"procedure.labial.t":"Preenchimento Labial","procedure.labial.d":"Contorno, proporção, definição e equilíbrio respeitando a identidade dos lábios.",
+"procedure.rino.t":"Rinomodelação","procedure.rino.d":"Refinamento estético e equilíbrio das proporções nasais conforme avaliação profissional.",
+"procedure.toxina.t":"Toxina Botulínica","procedure.toxina.d":"Possibilidades para testa, glabela, região periocular, nariz, queixo, mandíbula, pescoço/platysma e bruxismo conforme indicação.",
+"procedure.bio.t":"Bioestimuladores de Colágeno","procedure.bio.d":"Radiesse, Sculptra e estratégias de estímulo de colágeno voltadas à qualidade, firmeza e biomodulação.",
+"procedure.pdo.t":"Fios de PDO","procedure.pdo.d":"Fios de sustentação e fios lisos para estímulo de colágeno e suporte conforme indicação.",
+"procedure.bichectomia.t":"Bichectomia","procedure.bichectomia.d":"Procedimento cirúrgico para remoção da bola de Bichat, conforme avaliação e indicação profissional.",
+"procedure.regeneracao.t":"Regeneração e Biomodulação","procedure.regeneracao.d":"PRP, I-PRF, mesclas de biomodulação, exossomos e ExoCube quando indicados.",
+"procedure.capilar.t":"Terapias Capilares","procedure.capilar.d":"Estratégias voltadas à regeneração folicular, queda, volume e qualidade dos fios."
+};
+Object.assign(pt, procedureKeys);
+pt["faq.q5"]="A primeira consulta é obrigatória?"; pt["faq.a5"]="Sim. Pacientes de primeira vez passam por uma consulta de avaliação.";
+pt["faq.q6"]="Posso realizar o procedimento no mesmo dia?"; pt["faq.a6"]="Pode ser possível após avaliação presencial, desde que haja indicação profissional e disponibilidade para realização.";
+pt["faq.q7"]="Preciso levar exames?"; pt["faq.a7"]="Caso possua exames, você pode levá-los para contribuir com a avaliação. Não são informados exames específicos como obrigatórios.";
+pt["success.eyebrow"]="Abordagem"; pt["success.title"]="Possibilidades pensadas para cada rosto."; pt["success.disclaimer"]="As possibilidades de tratamento dependem das características individuais, avaliação e indicação profissional.";
+pt["success.item1.t"]="Individualidade"; pt["success.item1.q"]="Cada planejamento parte das características próprias de cada rosto."; pt["success.item1.a"]="Princípio do Instituto";
+pt["success.item2.t"]="Naturalidade"; pt["success.item2.q"]="A proposta é preservar a identidade e evitar padronização."; pt["success.item2.a"]="Princípio do Instituto";
+pt["success.item3.t"]="Planejamento"; pt["success.item3.q"]="Procedimentos são considerados dentro de uma estratégia individualizada."; pt["success.item3.a"]="Princípio do Instituto";
+pt["success.item4.t"]="Saúde"; pt["success.item4.q"]="Estética e saúde são consideradas de forma integrada."; pt["success.item4.a"]="Princípio do Instituto";
+
 pt["about_page.eyebrow"]="Sobre o Instituto"; pt["about_page.title"]="A beleza de cada rosto começa pela sua identidade."; pt["about_page.intro"]="Conheça o posicionamento do Dr. Samuel Montalvão e do Instituto Montalvão em Harmonização Orofacial."; pt["about_page.img_alt"]="Instituto Montalvão";
 ["marquee.item9","marquee.item10","marquee.item11","marquee.item12","marquee.item13","marquee.item14"].forEach((k,i)=>{pt[k]=["Cuidado","Ciência","Equilíbrio","Precisão","Saúde","Experiência"][i]});
 const en:Dict={...pt}; const es:Dict={...pt}; const dicts={pt,en,es};
