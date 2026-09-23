@@ -19,7 +19,7 @@ export const Route = createFileRoute("/api/analise")({
               {
                 role: "system",
                 content:
-                  `Você é um consultor estético odontológico da Clínica Thebit. Escreva em ${body.lang === 'es' ? 'espanhol' : body.lang === 'en' ? 'inglês' : 'português do Brasil'}, tom acolhedor e premium. ` +
+                  `Você é um consultor informativo do Instituto Montalvão. Escreva em ${body.lang === 'es' ? 'espanhol' : body.lang === 'en' ? 'inglês' : 'português do Brasil'}, tom acolhedor e premium. ` +
                   "Nunca faça diagnóstico nem prometa resultado: use linguagem ilustrativa e recomende avaliação presencial. " +
                   "Responda SOMENTE com JSON válido no formato " +
                   '{"resumo": string, "observacoes": string[], "protocolo": string[]} ' +
